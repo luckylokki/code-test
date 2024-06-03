@@ -15,7 +15,7 @@ class Inventory:
     def add_product(self, product):
         self.products.append(product)
 
-    def sell_product(self, product_name, amount):
+    def sell_product(self, product_name: str, amount: int):
         for product in self.products:
             if product.name == product_name:
                 if amount > product.quantity:
